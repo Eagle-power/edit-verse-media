@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* This is the new v4 import */
+@import "tailwindcss";
+
+/* This replaces tailwind.config.js in v4 */
+@theme {
+  /* The Primary Blue Accents */
+  --color-brandBlue: #2563EB;
+  /* A strong, trustworthy royal blue */
+  --color-brandBlue-light: #3B82F6;
+  --color-brandBlue-dim: #1D4ED8;
+
+  /* The Light Backgrounds */
+  --color-brandBg: #FFFFFF;
+  /* Pure white */
+  --color-brandBg-200: #F8FAFC;
+  /* Very soft gray-blue for alternating sections */
+  --color-brandBg-300: #F1F5F9;
+  /* Slightly darker for cards/inputs */
+
+  /* The Text Colors (Dark) */
+  --color-brandText: #0F172A;
+  /* Almost black for high readability */
+  --color-brandText-muted: #475569;
+  /* Medium gray for paragraphs */
+
+  /* Keep your fonts */
+  --font-syne: 'Syne', sans-serif;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-signature: 'Great Vibes', cursive;
+}
+
+body {
+  background-color: var(--color-brandBg);
+  color: var(--color-brandText);
+  /* Default text is now dark */
+  font-family: var(--font-outfit);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-brandBg);
+  color: white;
+  font-family: var(--font-outfit);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-syne);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#root::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html,
+body,
+#root {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
