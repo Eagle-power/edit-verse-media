@@ -19,10 +19,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: 'https://edit-verse-media.netlify.app' || 'http://localhost:5173',
   credentials: true,
 }));
-app.use(express.json()); 
+app.use(express.json());
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
