@@ -34,7 +34,7 @@ const Logo = () => {
         {/* <div className="h-[1px] flex-grow bg-gradient-to-l from-transparent to-[#14B8A6]"></div>
       </div> */}
 
-      <img src="./public/logo.png" height={20} width={150} />
+      <img src="https://res.cloudinary.com/dww70ejnl/image/upload/v1794325787/logo_pr3ali.png" height={20} width={150} />
 
 
 
