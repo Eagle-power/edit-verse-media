@@ -23,13 +23,13 @@ const Hero = () => {
         animate="visible"
         className="relative z-10 flex flex-col items-center"
       >
-        <motion.div variants={itemVariants} className="inline-flex items-center gap-2 bg-brandBlue/10 border border-brandBlue/25 text-brandBlue px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider mb-8">
-          <span className="w-1.5 h-1.5 bg-brandBlue rounded-full animate-pulse"></span>
+        <motion.div variants={itemVariants} className="inline-flex items-center gap-2 bg-brandTeal/10 border border-brandTeal/25 text-brandTeal px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider mb-8">
+          <span className="w-1.5 h-1.5 bg-brandTeal rounded-full animate-pulse"></span>
           Creative Digital Agency ✦ Results-Driven
         </motion.div>
 
-        <motion.h1 variants={itemVariants} className="font-syne text-4xl md:text-6xl lg:text-[5rem] font-extrabold leading-tight tracking-tighter mb-6">
-          <span className="text-brandBlue">Grow Your Brand</span><br />
+        <motion.h1 variants={itemVariants} className="font-plus-jakarta text-4xl md:text-6xl lg:text-[5rem] font-extrabold leading-tight tracking-tighter mb-6">
+          <span className="text-brandTeal">Grow Your Brand</span><br />
           <span className="text-brandText/85 block mt-2">with EditVerse Media</span>
         </motion.h1>
 
@@ -38,25 +38,25 @@ const Hero = () => {
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex gap-4 flex-wrap justify-center">
-          <a href="#contact" className="bg-brandBlue text-brandBg font-syne px-8 py-3.5 rounded-full font-bold text-base transition-all hover:bg-brandBlue-light hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(255,214,0,0.3)]">
+          <a href="#contact" className="bg-brandTeal text-brandBg font-plus-jakarta px-8 py-3.5 rounded-full font-bold text-base transition-all hover:bg-brandTeal-light hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(255,214,0,0.3)]">
             Get Started →
           </a>
-          <a href="#contact" className="border-[1.5px] border-white/20 text-brandText font-syne px-8 py-3.5 rounded-full font-semibold text-base transition-all hover:border-brandBlue hover:text-brandBlue hover:-translate-y-1">
+          <a href="#contact" className="border-[1.5px] border-white/20 text-brandText font-plus-jakarta px-8 py-3.5 rounded-full font-semibold text-base transition-all hover:border-brandTeal hover:text-brandTeal hover:-translate-y-1">
             Contact Now
           </a>
         </motion.div>
       </motion.div>
 
       {/* Scroll Indicator */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
         className="absolute bottom-10 flex flex-col items-center gap-2 text-brandText-muted-200 text-xs"
       >
-        <div className="w-[1px] h-[50px] bg-gradient-to-b from-brandBlue to-transparent animate-[scrollLine_1.5s_infinite]"></div>
+        <div className="w-[1px] h-[50px] bg-gradient-to-b from-brandTeal to-transparent animate-[scrollLine_1.5s_infinite]"></div>
         <span>Scroll Down</span>
-      </motion.div>
+      </motion.div> */}
 
       {/* Add this specific animation to your global css or tailwind config, but inline style works for one-offs */}
       <style>{`

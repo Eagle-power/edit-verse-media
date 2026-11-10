@@ -44,7 +44,7 @@ const ScrollToTop = () => {
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
           // The magic happens in the className logic at the end here 👇
-          className={`fixed right-6 md:right-10 z-[100] p-3 md:p-4 bg-brandBlue text-brandBg rounded-full shadow-[0_0_20px_rgba(255,214,0,0.3)] hover:bg-brandBlue-light focus:outline-none flex items-center justify-center transition-all duration-300 ease-in-out ${isNearBottom ? 'bottom-[180px] md:bottom-[130px]' : 'bottom-6 md:bottom-10'
+          className={`fixed right-6 md:right-10 z-[100] p-3 md:p-4 bg-brandTeal text-brandBg rounded-full shadow-[0_0_20px_rgba(255,214,0,0.3)] hover:bg-brandTeal-light focus:outline-none flex items-center justify-center transition-all duration-300 ease-in-out ${isNearBottom ? 'bottom-[180px] md:bottom-[130px]' : 'bottom-6 md:bottom-10'
             }`}
           aria-label="Scroll to top"
         >

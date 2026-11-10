@@ -1,43 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 /* This is the new v4 import */
 @import "tailwindcss";
 
-/* This replaces tailwind.config.js in v4 */
-@theme {
-  /* The Primary Blue Accents */
-  --color-brandBlue: #2563EB;
-  /* A strong, trustworthy royal blue */
-  --color-brandBlue-light: #3B82F6;
-  --color-brandBlue-dim: #1D4ED8;
+@layer base {
+  :root {
+    /* LIGHT MODE (Clean White & Slate) */
+    --brand-teal: #F0B805; /* Slightly darker teal for light mode contrast */
+    --brand-teal-light: #F0B805;
+    --brand-teal-dim: #F0B805;
 
-  /* The Light Backgrounds */
-  --color-brandBg: #FFFFFF;
-  /* Pure white */
-  --color-brandBg-200: #F8FAFC;
-  /* Very soft gray-blue for alternating sections */
-  --color-brandBg-300: #F1F5F9;
-  /* Slightly darker for cards/inputs */
+    --brand-bg: #FFFFFF;
+    --brand-bg-200: #F8FAFC;
+    --brand-bg-300: #F1F5F9;
 
-  /* The Text Colors (Dark) */
-  --color-brandText: #0F172A;
-  /* Almost black for high readability */
-  --color-brandText-muted: #475569;
-  /* Medium gray for paragraphs */
+    --brand-text: #0F172A;
+    --brand-text-muted: #475569;
+  }
 
-  /* Keep your fonts */
-  --font-syne: 'Syne', sans-serif;
-  --font-outfit: 'Outfit', sans-serif;
-  --font-signature: 'Great Vibes', cursive;
+  .dark {
+    /* DARK MODE (Midnight Blue & Soft Teal - CURRENT DEFAULT) */
+    --brand-teal: #F0B805;
+    --brand-teal-light: #F0B805;
+    --brand-teal-dim: #F0B805;
+
+    --brand-bg: #0B1120;
+    --brand-bg-200: #0F172A;
+    --brand-bg-300: #1E293B;
+
+    --brand-text: #F8FAFC;
+    --brand-text-muted: #94A3B8;
+  }
 }
 
-body {
-  background-color: var(--color-brandBg);
-  color: var(--color-brandText);
-  /* Default text is now dark */
-  font-family: var(--font-outfit);
-  overflow-x: hidden;
+/* This replaces tailwind.config.js in v4 */
+@theme {
+  /* Dynamic Accents */
+  --color-brandTeal: var(--brand-teal);
+  --color-brandTeal-light: var(--brand-teal-light);
+  --color-brandTeal-dim: var(--brand-teal-dim);
+
+  /* Dynamic Backgrounds */
+  --color-brandBg: var(--brand-bg);
+  --color-brandBg-200: var(--brand-bg-200);
+  --color-brandBg-300: var(--brand-bg-300);
+
+  /* Dynamic Text Colors */
+  --color-brandText: var(--brand-text);
+  --color-brandText-muted: var(--brand-text-muted);
+
+  /* Fonts */
+  --font-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-signature: 'Great Vibes', cursive;
 }
 
 html {
@@ -46,8 +62,8 @@ html {
 
 body {
   background-color: var(--color-brandBg);
-  color: white;
-  font-family: var(--font-outfit);
+  color: var(--color-brandText);
+  font-family: var(--font-inter);
   overflow-x: hidden;
 }
 
@@ -55,7 +71,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-syne);
+  font-family: var(--font-plus-jakarta);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

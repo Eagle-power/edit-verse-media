@@ -42,7 +42,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-5 md:px-[5%] bg-brandBg font-outfit">
+    <section id="services" className="py-20 px-5 md:px-[5%] bg-brandBg font-inter">
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -50,11 +50,11 @@ const Services = () => {
         transition={{ duration: 0.7 }}
         className="text-center max-w-[600px] mx-auto mb-14"
       >
-        <div className="inline-block bg-brandBlue/10 text-brandBlue px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider mb-4 border border-brandBlue/20">
+        <div className="inline-block bg-brandTeal/10 text-brandTeal px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider mb-4 border border-brandTeal/20">
           What We Do
         </div>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 text-brandText">
-          Our <span className="text-brandBlue">Services</span>
+          Our <span className="text-brandTeal">Services</span>
         </h2>
         <p className="text-brandText-muted text-base md:text-lg leading-relaxed">
           Everything your brand needs to scale — handled by experts.
@@ -70,17 +70,17 @@ const Services = () => {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             // Changed to pure white cards, subtle borders, and soft blue shadow glow on hover
-            className="group relative bg-white border border-brandText/5 rounded-3xl p-8 transition-all duration-300 hover:border-brandBlue/30 hover:-translate-y-1.5 hover:shadow-[0_15px_40px_rgba(37,99,235,0.08)] overflow-hidden shadow-sm"
+            className="group relative bg-brandBg-300 border border-brandText/5 rounded-3xl p-8 transition-all duration-300 hover:border-brandTeal/30 hover:-translate-y-1.5 hover:shadow-[0_15px_40px_rgba(20,184,166,0.08)] overflow-hidden shadow-sm"
           >
             {/* Hover Gradient Effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-brandBlue/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-brandTeal/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none"></div>
             
             {/* Changed background number from nearly invisible 5% to a soft, visible gray/blue mix */}
-            <div className="absolute top-6 right-6 text-4xl font-extrabold text-brandText/5 font-syne leading-none group-hover:text-brandBlue/10 transition-colors">
+            <div className="absolute top-6 right-6 text-4xl font-extrabold text-brandText/5 font-plus-jakarta leading-none group-hover:text-brandTeal/10 transition-colors">
               {service.num}
             </div>
             
-            <div className="w-[52px] h-[52px] bg-brandBlue/10 border border-brandBlue/15 text-brandBlue rounded-xl flex items-center justify-center mb-5">
+            <div className="w-[52px] h-[52px] bg-brandTeal/10 border border-brandTeal/15 text-brandTeal rounded-xl flex items-center justify-center mb-5">
               {service.icon}
             </div>
             
