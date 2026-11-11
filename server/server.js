@@ -25,6 +25,8 @@ const PORT = process.env.PORT || 5000;
 
 
 const allowedOrigins = [
+  'https://editversemedia.in',
+  'https://www.editversemedia.in',
   'https://edit-verse-media-1.onrender.com',
   'http://localhost:5173',
   process.env.CLIENT_URL
